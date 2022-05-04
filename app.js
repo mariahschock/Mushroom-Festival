@@ -42,7 +42,7 @@ addMushroomButton.addEventListener('click', () => {
 
 addFriendButton.addEventListener('click', () => {
     // get the name from the input
-    const name = friendInputEl.value;
+    const name = friendInputEl.value || Math.random().toString(36).slice(2, 7); 
     // create a new friend object
     const newFriend = {
         name: name,
